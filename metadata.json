@@ -1,0 +1,6 @@
+{
+  "name": "The Fitness Revolution",
+  "description": "The Fitness Revolution (TFR) is a premier gym and physical fitness center in Nazimabad No. 4, Karachi, offering elite strength training, personal coaching, separate ladies' timings, and comprehensive fitness programs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --color-tfr-black: #050505;
+  --color-tfr-dark: #0B0B0B;
+  --color-tfr-surface: #111111;
+  --color-tfr-card: #161616;
+  --color-tfr-gold: #FFC400;
+  --color-tfr-gold-light: #FFD54F;
+  --color-tfr-blue: #00AEEF;
+  --color-tfr-lime: #C7FF00;
+  --color-tfr-muted: #B7B7B7;
+  --color-tfr-border: rgba(255, 255, 255, 0.08);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  background-color: #050505;
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+/* Custom Typography & Display Fonts */
+.font-display {
+  font-family: 'Bebas Neue', 'Teko', impact, sans-serif;
+  letter-spacing: 0.04em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Glow and gradient utilities */
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(255, 196, 0, 0.25);
+}
+
+.glow-lime {
+  box-shadow: 0 0 35px -5px rgba(199, 255, 0, 0.25);
+}
+
+.glow-blue {
+  box-shadow: 0 0 35px -5px rgba(0, 174, 239, 0.25);
+}
+
+/* Subtle grid background */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Tabular figures for all numeric indicators */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Accessibility: Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
